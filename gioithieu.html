@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Store</title>
+    <link href="style.css" rel="stylesheet">
+    <link href="gioithieu.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Glasses Store</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown">DANH MỤC <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="category.html">KÍNH CẬN </a></li>
+                          <li><a href="category1.html">KÍNH RÂM</a></li>
+                          <li><a href="category2.html">KÍNH THỂ THAO </a></li>
+                          <li><a href="index.html">All DANH MỤC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="badge pull-right">4</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <!-- Nút Sign in với thuộc tính data-toggle và data-target -->
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" class="form-signin" role="form">
+                        <h3 class="form-signin-heading">Sign in with your email address</h3>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="rememberMe"> Remember me
+                            </label>
+                        </div>
+                        <button id="submitBtn" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-lg btn-caps btn-block"><span class="icon-dribbble"></span></a>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+    <section style="min-height: 85vh">
+        <script> addHeader(); </script>
+
+        <div class="page-gt">
+            <h4 class="page-header">
+                Giới thiệu
+            </h4>
+            <div class="page-info">
+                <p>Được thành lập từ năm 1996, chúng tôi tự hào là một trong những nhà phân phối kính mắt hàng đầu tại Hà Nội. Với hơn 20 năm kinh nghiệm trong lĩnh vực, chúng tôi mang đến cho khách hàng những sản phẩm kính mắt chất lượng cao và dịch vụ tuyệt vời.</p>
+                <br />
+                <p>
+                    Chúng tôi cung cấp một loạt các sản phẩm kính mắt, bao gồm kính cận, kính râm và kính thể thao, từ các thương hiệu nổi tiếng trên thế giới. Đội ngũ nhân viên chuyên nghiệp và nhiệt tình của chúng tôi luôn sẵn sàng tư vấn và giúp khách hàng lựa chọn sản phẩm phù hợp nhất.
+                </p>
+                <br />
+                <p>
+                    Với mục tiêu mang lại trải nghiệm mua sắm tốt nhất, chúng tôi không ngừng nâng cao chất lượng dịch vụ và mở rộng danh mục sản phẩm để đáp ứng nhu cầu ngày càng đa dạng của khách hàng. Chúng tôi cam kết cung cấp các sản phẩm kính mắt chính hãng với giá cả hợp lý và chế độ bảo hành tốt nhất.
+                </p>
+                <br />
+                <p>
+                    Chúng tôi xin chân thành cảm ơn tất cả các khách hàng đã, đang và sẽ ủng hộ chúng tôi. Sự hài lòng của quý khách hàng là động lực để chúng tôi không ngừng phát triển và hoàn thiện hơn nữa.
+                </p>
+                <br />
+                <p>
+                    Nếu bạn có bất kỳ câu hỏi hay góp ý nào, xin vui lòng liên hệ với chúng tôi qua trang "Liên Hệ". Chúng tôi luôn sẵn sàng lắng nghe và phục vụ bạn.
+                </p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    
+  <!-- Footer -->
+  <div class="container">
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Design &copy; <a href="index.html">Glasses Store</a> 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

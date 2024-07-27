@@ -1,0 +1,371 @@
+/* Base Styles */
+
+/* Navigation Bar */
+.navbar-inverse {
+    background-color: #000;
+    border: none;
+    margin-bottom: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1030;
+    box-shadow: 0 2px 4px rgba(6, 234, 250, 0.3);
+    height: 40px;
+}
+
+.navbar-inverse .navbar-header {
+    float: left;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 20px;
+    line-height: 40px;
+    padding: 0 15px;
+}
+
+.navbar-inverse .navbar-nav {
+    float: left;
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-inverse .navbar-nav > li {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #ffffff;
+    line-height: 40px;
+    padding: 0 15px;
+    display: flex;
+    align-items: center;
+}
+
+div#bs-example-navbar-collapse-1 {
+    background-color: #000;
+    border: none;
+    margin: 0 -16px;
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ddd;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+.navbar-inverse .dropdown-menu {
+    background-color: #333;
+    border: none;
+    border-radius: 0;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3);
+    display: none;
+}
+
+.navbar-inverse .dropdown-menu > li > a {
+    color: #ffffff;
+    line-height: 40px;
+    padding: 10px 15px;
+}
+
+.navbar-inverse .dropdown-menu > li > a:hover,
+.navbar-inverse .dropdown-menu > li > a:focus {
+    background-color: #9c0808;
+    color: #dddddd;
+}
+
+.navbar-inverse .dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+/* Modal Styling */
+.modal-dialog {
+    width: 90%;
+    max-width: 500px;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+div#content {
+    margin: 0 auto;
+    padding: 20px;
+    max-width: 1200px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.row.carousel-holder {
+    margin-top: 54px;
+}
+
+.col-sm-8.col-md-9 {
+    margin-top: 60px;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease-in-out, box-shadow 0.5s ease-in-out;
+}
+
+.thumbnail:hover {
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 8px 16px rgba(108, 169, 173, 0.3);
+}
+
+.buy-now-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.buy-now-btn {
+    flex-grow: 1;
+    margin-right: 10px;
+}
+
+.buy-now-btn:hover,
+.buy-now-btn:focus {
+    background-color: #18f005;
+    color: #fff;
+    outline: none;
+}
+
+.heart-icon {
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.heart-icon.red {
+    color: red;
+}
+
+.glyphicon-star {
+    color: gold;
+}
+
+.glyphicon-star-empty {
+    color: lightgray;
+}
+
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 70px;
+}
+
+.col-sm-4.col-md-3 {
+    top: -70px;
+}
+
+.sort-options {
+    position: relative;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.sort-options label {
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.sort-options select {
+    width: auto;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    float: right;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+    z-index: 9999;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #1e90ff;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+.new-label {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #f00;
+    color: #fff;
+    padding: 5px 10px;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 3px;
+    z-index: 10;
+    opacity: 0.9;
+}
+
+/* Responsive Styles */
+
+/* Mobile Phones */
+@media (max-width: 767px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 18px;
+        line-height: 40px;
+        padding: 0 10px;
+    }
+
+    .navbar-inverse .navbar-nav {
+        flex-direction: column;
+    }
+
+    .navbar-inverse .navbar-nav > li {
+        text-align: center;
+        width: 100%;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 10px 15px;
+    }
+
+    .modal-dialog {
+        width: 95%;
+        max-width: 400px;
+    }
+
+    .thumbnail {
+        margin-bottom: 15px;
+    }
+
+    .sort-options {
+        text-align: center;
+    }
+
+    .buy-now-container {
+        flex-direction: column;
+    }
+
+    .buy-now-btn {
+        margin: 5px 0;
+        width: 100%;
+    }
+}
+
+/* Tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0 15px;
+    }
+
+    .navbar-inverse .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-inverse .navbar-nav > li {
+        text-align: center;
+        width: auto;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 10px 15px;
+    }
+
+    .modal-dialog {
+        width: 90%;
+        max-width: 450px;
+    }
+
+    .thumbnail {
+        margin-bottom: 20px;
+    }
+
+    .sort-options {
+        text-align: right;
+    }
+
+    .buy-now-container {
+        flex-direction: row;
+    }
+
+    .buy-now-btn {
+        margin-right: 10px;
+        width: auto;
+    }
+}
+
+/* Desktops */
+@media (min-width: 992px) {
+    .navbar-inverse .navbar-brand {
+        font-size: 20px;
+        line-height: 40px;
+        padding: 0 15px;
+    }
+
+    .navbar-inverse .navbar-nav {
+        flex-direction: row;
+    }
+
+    .navbar-inverse .navbar-nav > li {
+        text-align: center;
+        width: auto;
+    }
+
+    .navbar-inverse .navbar-nav > li > a {
+        padding: 10px 15px;
+    }
+
+    .modal-dialog {
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .thumbnail {
+        margin-bottom: 25px;
+    }
+
+    .sort-options {
+        text-align: right;
+    }
+
+    .buy-now-container {
+        flex-direction: row;
+    }
+
+    .buy-now-btn {
+        margin-right: 10px;
+        width: auto;
+    }
+}

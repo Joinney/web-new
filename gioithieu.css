@@ -1,0 +1,89 @@
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f8f9fa;
+	color: #333;
+	line-height: 1.6;
+}
+
+.navbar-inverse {
+	background-color: #333;
+	border-color: #333;
+}
+
+.navbar-inverse .navbar-brand,
+.navbar-inverse .navbar-nav>li>a {
+	color: #fff;
+}
+
+.navbar-inverse .navbar-brand:hover,
+.navbar-inverse .navbar-nav>li>a:hover {
+	color: #ff8c00;
+}
+
+.badge {
+	background-color: #ff8c00;
+}
+
+.page-gt {
+	padding: 20px;
+	background: #fff;
+	margin: 20px auto;
+	border-radius: 10px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.page-header {
+	height: auto;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    padding: 10px;
+    background: #34e7ff;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+    color: #333;
+}
+
+.page-info p {
+	margin-bottom: 20px;
+	line-height: 1.6;
+}
+
+
+
+
+
+.modal-title {
+	font-size: 24px;
+}
+
+.btn-facebook,
+.btn-twitter {
+	margin: 10px 0;
+	width: 100%;
+}
+
+.btn-facebook {
+	background: #3b5998;
+	color: #fff;
+}
+
+.btn-twitter {
+	background: #55acee;
+	color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+	.navbar-header {
+		float: none;
+	}
+
+	.navbar-left,
+	.navbar-right {
+		float: none !important;
+	}
+
+	.navbar-collapse {
+		text-align: center;
+	}
+}

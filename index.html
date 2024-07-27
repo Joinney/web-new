@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Glasses Store</title>
+    <link href="style.css" rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar-inverse" role="navigation">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">Glasses Store</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                  <li><a href="index.html">TRANG CHỦ</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="active dropdown-toggle" data-toggle="dropdown"> DANH MỤC <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="category.html">KÍNH CẬN </a></li>
+                          <li><a href="category1.html">KÍNH RÂM</a></li>
+                          <li><a href="category2.html">KÍNH THỂ THAO </a></li>
+                          <li><a href="index.html">All DANH MỤC</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="gioithieu.html">GIỚI THIỆU</a></li>
+                    <li><a href="lienhe.html">LIÊN HỆ</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#"><span class="badge pull-right">4</span><i class="glyphicon glyphicon-shopping-cart"></i></a></li>
+                    <li><a href="account.html"><i class="glyphicon glyphicon-user"></i></a></li>
+                    <!-- Nút Sign in với thuộc tính data-toggle và data-target -->
+                    <li><a href="#" data-toggle="modal" data-target="#myModal">Sign in</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                    <h2 class="modal-title" id="myModalLabel">Sign in</h2>
+                </div>
+                <div class="modal-body">
+                    <form id="loginForm" class="form-signin" role="form">
+                        <h3 class="form-signin-heading">Sign in with your email address</h3>
+                        <div class="form-group">
+                            <input type="email" id="email" class="form-control" placeholder="Email address" required autofocus>
+                        </div>
+                        <div class="form-group">
+                            <input type="password" id="password" class="form-control" placeholder="Password" required>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" id="rememberMe"> Remember me
+                            </label>
+                        </div>
+                        <button id="submitBtn" class="btn btn-lg btn-primary btn-block" type="button">Sign in</button>
+                    </form>
+                </div>
+                <div class="row">
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-facebook btn-large btn-caps btn-block">Facebook <span class="icon-facebook"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-twitter btn-large btn-caps btn-block">Twitter <span class="icon-twitter"></span></a>
+                    </div>
+                    <div class="col-xs-3">
+                        <a href="#" class="btn btn-lg btn-caps btn-block"><span class="icon-dribbble"></span></a>
+                    </div>
+                </div>
+                <div class="modal-footer"></div>
+            </div>
+        </div>
+    </div>
+      <!-- Page Content -->
+  <div id="content" class="container">
+    <div class="row carousel-holder">
+      <div class="col-md-12">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="item active">
+                <img class="slide-image" src="https://matkinhnamquang.com/wp-content/uploads/2022/10/banner-dong-gia-gong-ancci-mat-kinh-nam-quang.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="slide-image" src="https://matkinhnamquang.com/wp-content/uploads/2022/10/banner-thu-mua-trong-cu-mat-kinh-nam-quang-1200x457.jpg" alt="" />
+            </div>
+            <div class="item">
+              <img class="slide-image" src="https://matkinhnamquang.com/wp-content/uploads/2022/10/banner-gia-dung-thu-trong-kinh-crazal-rock-mat-kinh-nam-quang-1200x457.jpg" alt="" />
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="container">
+      <div class="row">
+                           <!-- Tiêu chí sắp xếp -->
+                           <div class="col-sm-12">
+                            <div class="sort-options">
+                              <label for="sort-select">Sắp xếp theo:</label>
+                              <select id="sort-select" class="form-control">
+                                <option value="price-asc">Giá thấp đến cao</option>
+                                <option value="price-desc">Giá cao đến thấp</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+   
+          <!-- Phần Danh mục -->
+          <div class="col-sm-4 col-md-3">
+              <h3>Danh mục</h3>
+              <div class="list-group">
+                <a href="category.html" class="list-group-item">KÍNH CẬN</a>
+                <a href="category1.html" class="list-group-item">KÍNH RÂM</a>
+                <a href="category2.html" class="list-group-item">KÍNH THỂ THAO</a>
+              </div>
+          </div>
+    
+          <!-- Phần danh sách sản phẩm -->
+          <div class="col-sm-8 col-md-9">
+              <div class="row">
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <!-- Nhãn "New" -->
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/07/9810-c1.png" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$24.99</h4>
+                          <h4><a href="single-item.html">KÍNH RÂM</a></h4>
+                          <p>KÍNH RÂM EYEPLUS 9810 C1 GỌNG ĐEN MẮT NÂU <a target="_blank" href="http://bootsnipp.com">Bootsnipp</a>.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+                          <p class="pull-right">15 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/07/9810-c2.png" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$64.99</h4>
+                          <h4><a href="single-item.html">KÍNH RÂM </a></h4>
+                          <p>KÍNH RÂM EYEPLUS 9810 C2 GỌNG ĐỒI MỒI MẮT ĐEN.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+                          <p class="pull-right">12 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/07/15115-c53.jpg" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$74.99</h4>
+                          <h4><a href="single-item.html">KÍNH CẬN</a></h4>
+                          <p>GỌNG KÍNH CẬN BLANCY 15115 C53 ĐEN BẠC.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+                          <p class="pull-right">31 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <!-- Thêm các sản phẩm khác tương tự cho 3 cột -->
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/06/IMG_2152.jpg" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$84.99</h4>
+                          <h4><a href="single-item.html">KÍNH CẬN</a></h4>
+                          <p>GỌNG KÍNH CẬN EYEPLUS 2505 C7 XANH.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+          
+                          <p class="pull-right">6 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/06/IMG_2118.jpg" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$94.99</h4>
+                          <h4><a href="single-item.html">KÍNH RÂM</a></h4>
+                          <p>KÍNH RÂM EYEPLUS 7260 C3 MẮT HỒNG.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+                          <p class="pull-right">18 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+  
+                  <div class="col-sm-4">
+                    <div class="thumbnail">
+                      <div class="new-label">New</div>
+                        <img src="https://kinhmateyeplus.com/wp-content/uploads/2024/03/IMG_7463-700x700.jpg" alt="" />
+                        <div class="caption">
+                          <h4 class="pull-right">$94.99</h4>
+                          <h4><a href="single-item.html">KÍNH CẬN</a></h4>
+                          <p>GỌNG KÍNH CẬN REEMAN 39708 C193 XÁM.</p>
+                          <div class="buy-now-container">
+                            <a href="purchase-link.html" class="btn btn-primary buy-now-btn">Mua ngay</a>
+                            <span class="glyphicon glyphicon-heart heart-icon"></span>
+                          </div>
+                        </div>
+                        <div class="ratings">
+                          <p class="pull-right">18 reviews</p>
+                          <p>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                            <span class="glyphicon glyphicon-star-empty"></span>
+                          </p>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="pagination-container">
+                  <ul class="pagination">
+                      <li><a href="#" id="prev">«</a></li>
+                      <li><a href="#" class="page-number" data-page="1">1</a></li>
+                      <li><a href="#" class="page-number" data-page="2">2</a></li>
+                      <li><a href="#" class="page-number" data-page="3">3</a></li>
+                      <li><a href="#" id="next">»</a></li>
+                  </ul>
+              </div>
+            </div>
+            </div>
+            
+          </div>
+          
+        </div>
+        
+      </div>
+
+    </div>
+
+  <!-- Footer -->
+  <div class="container">
+    <footer>
+      <div class="row">
+        <div class="col-lg-12">
+          <p>Design &copy; <a href="index.html">Glasses Store</a> 2024</p>
+        </div>
+      </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
